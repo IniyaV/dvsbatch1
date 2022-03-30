@@ -1,0 +1,19 @@
+pipeline {
+  agent any
+  stages {
+    stage ('welcome to PaC') {
+      steps {
+        script {
+          sh "echo Hi team welcome"
+        }
+      }
+    }
+    stage('stage2') {
+      steps {
+        script {
+          sh "echo i am stage2"
+        }
+      }
+    }
+  }
+}
